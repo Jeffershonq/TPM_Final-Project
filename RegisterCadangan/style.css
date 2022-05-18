@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins";
+    color: white;
+}
+
+.baru{
+   
+}
+
+.main {
+    width: 100%;
+    height: 280vh;
+    background: #0E0A4D;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12%;
+    margin-bottom: -500%;
+}
+
+.card {
+    width: 80%;
+    /* height: 70vh; */
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    max-width: 1080px;
+    /* position: fixed; */
+
+}
+
+.left {
+    /* margin: 20px 100px 20px -520px; */
+    width: 30%;
+    /* padding-top: 5rem; */
+    background: rgb(186, 179, 222);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    margin-left: -5%;
+    margin-top: -2.8%;
+    padding-bottom: 20px;
+
+}
+
+.left>h1 {
+    padding-top: 20%;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgba(14, 10, 77, 1);
+    position: sticky;
+    padding-top: 40%;
+    padding-bottom: 15%;
+}
+
+.left p {
+    font-size: 14px;
+    color: rgba(14, 10, 77, 1);
+        padding-bottom: 50%;
+        position: sticky;
+        padding-top: 10%;
+
+}
+
+.left a {
+    color: rgba(14, 10, 77, 1);
+    position: sticky;
+
+}
+
+.rocket,
+.progress {
+    width: 70%;
+}
+
+.right {
+    margin-left: 35%;
+    width: 60%;
+    background: radial-gradient(89.5% 89.5% at 18.65% 4.89%, rgba(201, 196, 255, 0.36) 0%, rgba(196, 196, 196, 0.06) 100%);
+    padding: 2rem 7rem;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right>h1 {
+    padding-top: 10%;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #BAB3DE 0%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.form-line {
+    margin: 2rem 0;
+}
+
+.form-line>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.upload>div {
+    align-items: flex-start;
+}
+
+.form-line img {
+    height: 35px;
+}
+
+.form-line>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.form-line>div>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.file-format {
+    margin-top: 5px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.error-message,
+.error-message {
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+}
+
+.valid {
+    display: flex;
+}
+
+.valid {
+    display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+
+
+.form-line-upload {}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.custom-file-upload img {
+    height: 25px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input:invalid {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+}
+
+.continue {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.continue img {
+    height: 2rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="logo hackathon.svg">
+
+</head>
+<body>
+    <div class="baru">
+    <div class="container">
+        <h1>Welcome Back</h1>
+        <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()"> 
+            <div class="form-group">
+                <label>Nama Team</label>
+                <input type="text" name="nama" placeholder="Please type your team name here..." class="form-control" required minlength="4">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="email" placeholder="Please type your pasword here..." class="form-control">
+                <small id="emailHelp" class="form-text text-muted" >Input Your Password</small>
+            </div>
+            <p>Forgot Password</p>
+            <div class="button">
+            <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+            <!-- <p>Not registered yet? Register here!</p> -->
+        </form>
+    </div>
+<s/div>
+
+    <script>
+        function validateForm() {
+            if (document.forms["formPendaftaran"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["email"].value == "") {
+                alert("Password is needed");
+                document.forms["formPendaftaran"]["email"].focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
